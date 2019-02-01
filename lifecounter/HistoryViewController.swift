@@ -10,13 +10,15 @@ import UIKit
 
 class HistoryViewController: UIViewController {
     
+    @IBOutlet weak var historyText: UITextView!
+    
     @IBAction func backBtn(_ sender: Any) {
         performSegue(withIdentifier: "segueBack", sender: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        historyText.text = historyTextContent
         // Do any additional setup after loading the view.
     }
     
