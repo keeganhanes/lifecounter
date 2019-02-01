@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBAction func historyBtn(_ sender: Any) {
+        performSegue(withIdentifier: "segue", sender: self)
+    }
+    
+    
     @IBOutlet weak var p1Life: UILabel!
     var p1LifeValue : Int = 20
     @IBOutlet weak var p2Life: UILabel!
